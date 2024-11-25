@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="sv">
+    <head>
+        <meta charset="utf-8">
+        <title>Presentation av min själv i kursen DV1657</title>
+        <link rel="stylesheet" href="css/kmom05.css">
+    </head>
+    <body>
+        <header id="mynav">
+           
+        </header>
+        <div class="content">
+            <select id="myselect" class="myselect">
+                <option>Choose...</option>
+            </select>
+            <p class="paragraph">Result</p>
+            <table id="mytable">
+                <tr>
+                    <th>Country</th><th>Year</th><th>co2</th><th>co2 per gdp</th><th>coal co2</th><th>share global co2</th><th>population</th>
+                </tr>
+            </table>
+            <p class="paragraph">Scoretable</p>
+            <table id="scoretable">
+                <tr>
+                    <th>Country</th><th>Score</th>
+                </tr>
+                <tr>
+                    <td>Sweden</td><td id="swedescore"></td>
+                </tr>
+                <tr>
+                    <td>Norway</td><td id="norwayscore"></td>
+                </tr>
+                <tr>
+                    <td>Denmark</td><td id="denmarkscore"></td>
+                </tr>
+            </table>
+            <button id="resetscore" class="resetscore">Reset Score</button>
+        </div>
+        <script src="js/main.js"></script>
+        <script type="module" src="js/kmom05.js"></script>
+    </body>
+</html>

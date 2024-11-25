@@ -1,0 +1,46 @@
+/**
+ *
+ */
+async function runTests () {
+  await new Promise((resolve) => {
+    testOneScore += testOne(() => {
+      startTestTwo(resolve)
+    })
+  })
+}
+
+/**
+ *
+ * @param resolveTestTwo
+ */
+async function startTestTwo (resolveTestTwo) {
+  await new Promise((resolve) => {
+    testTwoScore += testTwo(() => {
+      startTestThree(resolveTestTwo)
+    })
+  })
+}
+
+/**
+ *
+ * @param resolveTestThree
+ */
+async function startTestThree (resolveTestThree) {
+  await new Promise((resolve) => {
+    testThreeScore += testThree(() => {
+      startTestSummary(resolveTestThree)
+    })
+  })
+}
+
+/**
+ *
+ * @param resolveTestThree
+ */
+async function startTestSummary (resolveTestSummary) {
+  await new Promise((resolve) => {
+    testSummary(() => {
+      resolveTestSummary()
+    })
+  })
+}

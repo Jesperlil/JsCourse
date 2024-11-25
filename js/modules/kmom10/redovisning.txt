@@ -1,0 +1,15 @@
+Redovisning:
+Test 1: Trivia
+Jag valde att nyttja två containers där första är för information och testet medan den andras uppgift är att visa resultat. För frågorna skapade jag en JSON dokument där jag satte boolean värde på rätt/fel svar för att kunna använda i programmet. Jag kör sen igenom testet en fråga i taget med eventlisteners och kontrollerar resultatet. För att starta första testet och resterande så använder jag en testManager som inväntar ett promise från första testet innan den kör nästa deltest.
+
+Test 2: Fizz Buzz
+Detta valde jag att göra en random sekvens mellan 0-50 ungefär. Denna kommer bli annorlunda varje gång sidan eller testet börjar om. Kör sedan en funktion som kontrollerar vad som nästa bokstav/ord ska vara i sekvensen och ger användaren några alternativ. Sedan kontrollerar den ifall användaren och funktionen som kollar sekvens har svarat samma. Har i denna koden gjort att knapparna blir oanvändbara när användaren inte ska få trycka på dom längre.
+
+
+Test 3: Läsning
+Här valde jag lite färger och former som programmet sedan kommer mixa och få fram lite olika objekt. Insåg även att testet blev skumt ifall samma föremål kunde dyka upp två gånger så fick göra en kodsnutt som gjorde att två aldrig kan se likadana ut. För att användare inte ska kunna göra testet efter 15 sekunders timern gått ut så skapade jag en boolean value som håller koll på ifall testet är aktivt eller inte. Med hjälp av lite funktioner lyckades jag få objekten och listan med objektens beskrivningar att matcha i format. Med det gick det att jämföra vad användaren klickat på samt vad som är efterfrågat i listan i den andra containern.
+
+2. Detta va aningen tufft projekt, fruktansvärt kul då man väldigt snabbt får respons på ändringar man gör. Största problemet var att försöka få allting att gå i ordning utan att testen startar direkt på varandra och att sedan kunnna göra window.reset() funktionen utan att knäcka alla eventListeners. Tycker dock jag utvecklats något ofantligt av detta projekt så är mycket nöjd. Använde även chatGPT khan academy som vägrar ge kod men ifrågasätter kodens struktur och annat vilket har varit magiskt. Löste stora delar av koden rätt snabbt men på ett väldigt komplicerat sätt. Den började ifrågasätta och tvingade mig lite tänka om och förbättra koden.
+
+
+3. Tycker kanske att innehållet på föreläsningarna har varit lite åt den sämre sidan. Hade gärna sett att ni gick in mer på detalj vad som händer med eventListeners bland annat. Mer teori än praktisk visning. Kanske missade något men är min uppfattning.

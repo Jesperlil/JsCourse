@@ -1,0 +1,52 @@
+@import './navbar.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    position: relative;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box {
+    position: absolute;
+}
+ 
+/*.center {
+    top: 50%;
+    left: 50%;
+}*/
+ 
+.red { background-color: red; }
+.orange { background-color: orange; }
+.yellow { background-color: yellow; }
+.green { background-color: green; }
+.blue { background-color: blue; }
+.indigo { background-color: indigo; }
+.violet { background-color: violet; }
+
+ 
+.size200 {
+    height: 200px;
+    width: 200px;
+}
+
+.selected {
+    outline: 3px solid black;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+.animateSize {
+    transition: width 1s, height 1s;
+}

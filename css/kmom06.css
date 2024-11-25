@@ -1,0 +1,149 @@
+@import './navbar.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: lightblue;
+}
+
+.content{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.container{
+    width: 1200;
+    background: beige;
+    display: flex;
+    gap: 70px;
+    align-items: flex-end;
+    padding: 60px;
+    padding-top:60px;
+    border-radius: 10px;
+}
+
+.worddisplay{
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.worddisplay .letter{
+    width: 28px;
+    margin-bottom: 40px;
+    border-bottom: 3px solid black;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.worddisplay .letter.correct{
+    border-color: transparent;
+    margin: 10px 0 10px;
+    margin-bottom: 38px;
+}
+
+.gamebox .keyboard{
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.keyboard button{
+    width: calc(100% / 9 - 5px);
+    color: black;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+    background: #d9b382;
+    border-radius: 4px;
+    text-transform: uppercase;
+    padding: 3px;
+}
+
+.gameModal button{
+    width: 200px;
+    color: black;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+    background: #d9b382;
+    border-radius: 4px;
+    text-transform: uppercase;
+    padding: 3px;
+}
+
+.keyboard button:hover{
+    background: #A38550 ;
+}
+
+.keyboard button[disabled]{
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.restart{
+    width: calc(100% / 9 - 5px);
+    color: black;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+    background: #d9b382;
+    border-radius: 4px;
+    text-transform: uppercase;
+    padding: 3px;
+}
+
+.gameModal{
+    position: fixed;
+    background: rgba(0,0,0,0.6);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 999;
+    transition: opacity 0.4s ease ;
+}
+
+.gameModal.show{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.gameModal .content{
+    background: white;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.gameModal h4{
+    font-size: 1.5rem;
+}
+
+.gameModal p{
+    font-size: 1rem;
+}
+

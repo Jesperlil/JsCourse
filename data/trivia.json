@@ -1,0 +1,52 @@
+[
+    {
+        "question": "What is the largest lake in Sweden?",
+        "options": [
+            { "text": "Mälaren", "correct": false },
+            { "text": "Vänern", "correct": true },
+            { "text": "Oceanen", "correct": false },
+            { "text": "Vättern", "correct": false },
+            { "text": "Atlanten", "correct": false }
+        ]
+    },
+    {
+        "question": "Solve for x: 4x = 4(√-16)",
+        "options": [
+            { "text": "x = 4", "correct": false },
+            { "text": "x = -4", "correct": false },
+            { "text": "x = 16", "correct": false },
+            { "text": "x = -16", "correct": false },
+            { "text": "Imaginary number", "correct": true }
+        ]
+    },
+    {
+        "question": "What are you allowed to bring onto an airplane?",
+        "options": [
+            { "text": "Surströmming", "correct": false },
+            { "text": "Weapons", "correct": false },
+            { "text": "Fireworks", "correct": false },
+            { "text": "Pepper spray", "correct": false },
+            { "text": "Lightsabers", "correct": true }
+        ]
+    },
+    {
+        "question": "What does this japanese word mean: コーヒー",
+        "options": [
+            { "text": "Software developer", "correct": false },
+            { "text": "Code", "correct": false },
+            { "text": "Coffee", "correct": true },
+            { "text": "Japanese", "correct": false },
+            { "text": "Hello", "correct": false }
+        ]
+    },
+    {
+        "question": "Which city should you visit in Sweden?",
+        "options": [
+            { "text": "Stockholm", "correct": false },
+            { "text": "Göteborg", "correct": true },
+            { "text": "Malmö", "correct": false },
+            { "text": "Luleå", "correct": false },
+            { "text": "Karlstad", "correct": false }
+        ]
+    }
+]

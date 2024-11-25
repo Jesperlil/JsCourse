@@ -1,0 +1,161 @@
+@import './navbar.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: beige;
+    margin-top: 20px;
+}
+
+.content{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+.buttons{
+    width: fit-content;
+    height: fit-content;
+    background: white;
+    justify-content: space-between;
+    border-radius: 20px;
+    font-size: medium;
+    font-style: bold;
+    padding: 5px 10px;
+    border: 2px solid lightgrey;
+}
+
+.buttons:hover{
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+.firstContainer{
+    width: 1200;
+    background: #e8c39e;
+    display: flex;
+    padding: 40px;
+    padding-top:40px;
+    border-radius: 35px;
+    flex-direction: column;
+    border-color: white;
+    border: 2px solid;
+    align-items: center;
+    gap: 10px;
+}
+
+.firstContainer button{
+    width: fit-content;
+    height: fit-content;
+    background: whitesmoke;
+    justify-content: space-between;
+    border-radius: 20px;
+    font-size: medium;
+    font-style: bold;
+    padding: 5px 10px;
+}
+
+.secondContainer{
+    width: 1200;
+    background: #e8c39e;
+    padding: 40px;
+    padding-top:40px;
+    border-radius: 35px;
+    flex-direction: column;
+    border-color: white;
+    border: 2px solid;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.correct{
+    background: lightgreen;
+}
+
+.incorrect{
+    background: #FF474C;
+}
+
+.unable{
+    pointer-events: none;
+}
+
+.boxes{
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    margin: 10px;
+}
+
+.lists{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: large;
+}
+
+.elements {
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+.object {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+
+.square {
+    width: 100px;
+    height: 100px;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left:50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid;
+    background-color: none;
+}
+
+.rectangle {
+    width: 140px;
+    height: 100px;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.black {
+    background-color: black;
+}
